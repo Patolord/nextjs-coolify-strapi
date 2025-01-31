@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Footer from "@/app/components/footer";
 import Header from "@/app/components/header";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,6 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        async
+        src="https://umami-zgks8k8gk4k08s4w88sc80go.rodrigoluiz.xyz/script.js"
+        data-website-id="9331b6e0-4f94-4bd5-8bdf-b4b5c5bced32"
+      ></Script>
       <body>
         <div className="bg-gray-200 min-h-screen grid grid-rows-[auto_1fr_auto]">
           <Header />
