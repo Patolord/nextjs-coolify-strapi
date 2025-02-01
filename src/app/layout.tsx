@@ -23,9 +23,9 @@ export default function RootLayout({
         data-website-id="9331b6e0-4f94-4bd5-8bdf-b4b5c5bced32"
       ></Script>
       <body>
-        <div className="bg-gray-200 min-h-screen grid grid-rows-[auto_1fr_auto]">
+        <div className=" min-h-screen grid grid-rows-[auto_1fr_auto]">
           <Header />
-          <main className="container mx-auto bg-white/50 rounded-xl py-7 px-8 m-6 overflow-hidden">
+          <main className="container mx-auto  rounded-xl py-7 px-8 m-6 overflow-hidden ">
             {children}
           </main>
           <Footer />
