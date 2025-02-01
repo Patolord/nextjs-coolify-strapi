@@ -69,7 +69,7 @@ function TeamMemberCard({
   slug,
 }: Readonly<TeamMemberProps>) {
   const imageUrl = `${
-    process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:1337"
+    process.env.NEXT_PUBLIC_API_URL ?? "https://strapi.rodrigoluiz.xyz"
   }${photo.url}`;
   return (
     <Link
