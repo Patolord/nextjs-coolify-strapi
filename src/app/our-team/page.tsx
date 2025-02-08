@@ -84,6 +84,7 @@ function TeamMemberCard({
         alt={photo?.alternativeText || name}
         width={500}
         height={500}
+        unoptimized
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{name}</h3>

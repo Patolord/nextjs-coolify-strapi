@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "localhost",
-        pathname: "/uploads/**/*",
+        hostname: "strapi.rodrigoluiz.xyz",
+        pathname: "/uploads/**",
       },
     ],
   },
