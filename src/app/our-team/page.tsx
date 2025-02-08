@@ -68,9 +68,12 @@ function TeamMemberCard({
   photo,
   slug,
 }: Readonly<TeamMemberProps>) {
-  const imageUrl = `${
-    process.env.NEXT_PUBLIC_API_URL ?? "https://strapi.rodrigoluiz.xyz"
-  }${photo.url}`;
+  const imageUrl = photo?.url
+    ? `${process.env.NEXT_PUBLIC_API_URL ?? "https://strapi.rodrigoluiz.xyz"}${
+        photo.url
+      }`
+    : "https://placehold.co/600x400";
+
   return (
     <Link
       href={`/our-team/${slug}`}
@@ -78,7 +81,7 @@ function TeamMemberCard({
     >
       <Image
         src={imageUrl}
-        alt={photo.alternativeText || name}
+        alt={photo?.alternativeText || name}
         width={500}
         height={500}
       />
